@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Rehnuma · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="portfolio-wrapper">
+
+        <!-- ===== NAVBAR ===== -->
+        <nav class="card navbar">
+            <div class="logo">Rehnuma Padhiyar</div>
+            <button class="hamburger" id="hamburger" aria-label="menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" data-section="hero" class="active">Home</a></li>
+                <li><a href="#" data-section="about">About</a></li>
+                <li><a href="#" data-section="skills">Skills</a></li>
+                <li><a href="#" data-section="projects">Projects</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- ===== ALL SECTIONS (All visible initially) ===== -->
+        
+        <!-- HERO -->
+        <section id="hero" class="card hero-content section">
+            <h1>Hi, I'm Rehnuma Padhiyar</h1>
+            <div class="highlight">Frontend Developer</div>
+            <p>I build responsive and user-friendly websites with a passion for clean UI and smooth interactions.</p>
+            <div class="accent-line"></div>
+            <a href="#" class="btn contact-trigger" data-section="contact">Contact Me</a>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="card section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-text">
+                <p>I'm a student developer with a strong interest in frontend technologies. I enjoy turning complex problems into elegant, responsive designs. Currently exploring React and modern CSS frameworks. I believe in writing clean, maintainable code and continuous learning.</p>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="card section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <span class="skill-box">HTML5</span>
+                <span class="skill-box">CSS3</span>
+                <span class="skill-box">JavaScript</span>
+                <span class="skill-box">PHP</span>
+                <span class="skill-box">Git &amp; GitHub</span>
+                <span class="skill-box">JAVA</span>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="card section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>Registration Form</h4>
+                    <p>Live weather data using OpenWeather API, with dynamic backgrounds.</p>
+                    <a href="https://padhiyarrehnuma-creator.github.io/day5-task/ " class="btn-small">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h4>Student Portfolio</h4>
+                    <p>Kanban-style task board with drag &amp; drop, local storage.</p>
+                    <a href="https://padhiyarrehnuma-creator.github.io/Day-10-task/" class="btn-small">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h4>Glassmorphism UI</h4>
+                    <p>Modern portfolio with glassmorphism, fully responsive.</p>
+                    <a href="https://padhiyarrehnuma-creator.github.io/day-8-task/" class="btn-small">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="card section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>padhiyarrehnuma@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 74878 14056</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ahmedabad</span>
+                    </div>
+                    <div style="margin-top: 0.6rem; font-size: 0.9rem; color: #dac6ba;">
+                        <i class="fab fa-github" style="margin-right: 10px;"></i>
+                        <i class="fab fa-linkedin" style="margin-right: 10px;"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <textarea placeholder="Message" rows="3" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer-long">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 style="background: linear-gradient(135deg, #e8c8b8, #c89a82); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; display: inline-block;">Rehnuma Padhiyar</h4>
+                    <p style="margin-top: 0.5rem; line-height: 1.7;">Crafting digital experiences with a touch of elegance. Frontend developer &amp; creative problem solver.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#" data-section="hero">Home</a>
+                    <a href="#" data-section="about">About</a>
+                    <a href="#" data-section="skills">Skills</a>
+                    <a href="#" data-section="projects">Projects</a>
+                    <a href="#" data-section="contact">Contact</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get in Touch</h4>
+                    <p><i class="fas fa-envelope" style="width: 1.6rem; color: #c89a82;"></i> padhiyarrehnuma@gmail.com</p>
+                    <p><i class="fas fa-phone-alt" style="width: 1.6rem; color: #c89a82;"></i> +91 74878 14056</p>
+                    <p><i class="fas fa-map-marker-alt" style="width: 1.6rem; color: #c89a82;"></i> Ahmedabad</p>
+                    <p style="margin-top: 0.6rem; font-size: 0.85rem; color: #b39686;">Available for freelance</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Rehnuma Padhiyar &bull; built with <i class="fas fa-heart" style="color: #c89a82;"></i> &bull; all rights reserved
+            </div>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
